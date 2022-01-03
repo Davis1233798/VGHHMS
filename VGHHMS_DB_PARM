@@ -1,10 +1,12 @@
+
+lsDataSource = ProfileString( fsiniFile, lsKey, "ServerName", "-1")
+
+lsDBName= ProfileString(fsiniFile, lsKey, "DATABASE","-1")
+
 lsProvider ='SQLOLEDB'
 //Combine string 
 lsDBParm = "PROVIDER='" + lsProvider + "',DATASOURCE='"+ lsDataSource + &
 		           "', PROVIDERSTRING='DataBase=" + lsDBName + "', DisableBind=0"
-
-
-
 //Set Parameter
 fSQLCA.DBMS = "OLE DB"
 fSQLCA.LogId  = "osun"
