@@ -1,6 +1,7 @@
 
 lsDataSource = ProfileString( fsiniFile, lsKey, "ServerName", "-1")
-
+(In Online Enviroment  ServerName=10.99.22.165
+DATABASE=VGHHMS)
 lsDBName= ProfileString(fsiniFile, lsKey, "DATABASE","-1")
 
 lsProvider ='SQLOLEDB'
