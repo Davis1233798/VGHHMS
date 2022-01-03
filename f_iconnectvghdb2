@@ -1,0 +1,7 @@
+lsDSN = ProfileString(gsinifile,"HISDB2","ODBC","DBHIS32")//Jack 20211222 Modified
+lsDBParm = "ConnectString='DSN="+lsDSN+";UID=xvgh85;PWD=phys3279',RPCReBind=1"
+
+
+fsqlcadb2.DBMS = "ODBC"
+fsqlcadb2.AutoCommit = True
+fsqlcadb2.DBParm = lsDBParm
