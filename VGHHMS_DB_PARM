@@ -1,0 +1,18 @@
+lsProvider ='SQLOLEDB'
+//Combine string 
+lsDBParm = "PROVIDER='" + lsProvider + "',DATASOURCE='"+ lsDataSource + &
+		           "', PROVIDERSTRING='DataBase=" + lsDBName + "', DisableBind=0"
+
+
+
+//Set Parameter
+fSQLCA.DBMS = "OLE DB"
+fSQLCA.LogId  = "osun"
+fSQLCA.Logpass = "osun000"
+fSQLCA.AutoCommit = FALSE
+fSQLCA.DBParm = lsDBParm
+fSQLCA.Lock = "RC"
+
+Disconnect using fSQLCA;
+
+Connect using fSQLCA;
